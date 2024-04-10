@@ -1,0 +1,9 @@
+@import './assets/style/reset';
+@import './assets/style/variables';
+@import './assets/style/grid';
+@import './assets/style/fonts';
+
+// Import Components
+@import './components/header/header';
+@import './components/footer/footer';
+@import './components/container/container';

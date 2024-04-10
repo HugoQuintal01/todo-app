@@ -1,0 +1,118 @@
+.container-section{
+    padding: 100px 0;
+
+    .container-div{
+        padding: 0;
+        border: 1px solid $primary;
+
+        .container-title{
+            padding: 30px 50px;
+            //border-bottom: 1px solid $primary;
+            background-color: $third;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+            span{
+                color: $white;
+            }
+        }
+
+        .container-content{
+            position: relative;
+            padding: 40px 50px;
+
+            .content-input{
+                position: relative;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+
+                input{
+                    padding: 10px 15px;
+                    width: -webkit-fill-available;
+                    font-size: 1em;
+
+                    &::placeholder{
+                        font-size: 1em;
+                    }
+                }
+
+                button{
+                    background-color: $third;
+                    color: $white;
+                    font-size: 1em;
+                    padding: 10px 30px;
+                    border: none;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    cursor: pointer;
+                    transition-duration: $animationtime;
+
+                    &:hover{
+                        background-color: $primary;
+                    }
+                }
+            }
+
+            .todos-list{
+                margin-top: 40px;
+                border: 1px solid $third;
+                padding: 0;
+
+                .todo-item{
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                    padding: 30px 15px;
+                    border-bottom: 1px solid $primary;
+
+                    &:nth-child(odd){
+                        background-color: $neutral;
+                    }
+
+                    &:last-child{
+                        border-bottom: none;
+                    }
+
+                    .todo-item-content{
+                        display: flex;
+                        align-items: center;
+
+                        input{
+                            cursor: pointer;
+                        }
+
+                        label{
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .todo-item-edit{
+                        display: flex;
+                        align-items: center;
+                        
+                        button{
+                            margin: 0 5px;
+                            border: 1px solid $third;
+                            padding: 10px 20px;
+                            color: $white;
+                            background-color: $third;
+                            font-size: 0.8em;
+                            font-weight: 400;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            transition-duration: $animationtime;
+
+                            &:hover{
+                                background-color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
